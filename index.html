@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+    <script defer src="./script/errorHandling.js"></script>
+  </head>
+  <body>
+    <div class="component">
+      <section class="contentContainer">
+        <section class="contentWrapper">
+          <nav class="navbar">
+            <img src="./images/logo.svg" alt="Logo" />
+          </nav>
+          <aside class="mobileImageContainer">
+            <img src="./images/hero-mobile.jpg" alt="MobileImage" class="mobileImage" />
+          </aside>
+          <main class="mainContainer">
+            <h1>we're <span>coming soon</span></h1>
+            <p>
+              Hello fellow shoppers! We're currently building our new fashion store. Add
+              your email below to stay up-to-date with announcements and our launch deals.
+            </p>
+            <form class="inputForm borderNormal">
+              <input type="Email" id="email" name="email" placeholder="Email Address" />
+              <section class="interactiveButton">
+                <img
+                  src="./images/icon-error.svg"
+                  alt="ErrorIcon"
+                  class="errorIcon hidden"
+                />
+                <button id="submitButton">
+                  <img src="./images/icon-arrow.svg" alt="SendIcon" />
+                </button>
+              </section>
+              <p class="errorMessage hidden">Please provide a valid email</p>
+            </form>
+          </main>
+        </section>
+      </section>
+      <aside class="imageContainer">
+      </aside>
+    </div>
+  </body>
+</html>

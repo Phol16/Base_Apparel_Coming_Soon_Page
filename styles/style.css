@@ -1,0 +1,238 @@
+:root {
+  --DesaturatedRed: hsl(0, 36%, 70%);
+  --SoftRed: hsl(0, 93%, 68%);
+
+  --DarkGrayishRed: hsl(0, 6%, 24%);
+  --colorGradient1: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  --colorGradient2: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+  font-family: 'Josefin Sans';
+  overflow-x: hidden;
+}
+.hidden {
+  display: none;
+}
+.visible {
+  display: flex;
+}
+.borderSuccess {
+  border: solid 1px green;
+}
+.borderError {
+  border: solid 1px red;
+  transition: ease;
+  animation: shake 0.25s 1;
+}
+.borderNormal {
+  border: solid 1px var(--DesaturatedRed);
+}
+.contentContainer {
+  background: url(../images/bg-pattern-desktop.svg) top left / cover no-repeat;
+}
+.contentWrapper {
+  display: flex;
+  flex-flow: column;
+}
+.navbar {
+  padding: 2rem;
+}
+.navbar img {
+  width: 6em;
+}
+.mobileImageContainer {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+.mobileImage {
+  width: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+.imageContainer {
+  display: none;
+}
+.mainContainer {
+  max-width: 375px;
+  margin: auto;
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+  padding: 4rem 1rem;
+  color: var(--DesaturatedRed);
+}
+.mainContainer h1 {
+  max-width: 20rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
+  font-size: 2.5rem;
+  letter-spacing: 0.25em;
+  line-height: 3rem;
+}
+.mainContainer h1 span {
+  font-weight: 700;
+  color: var(--DarkGrayishRed);
+}
+.mainContainer p {
+  line-height: 1.8em;
+  text-align: center;
+  font-size: 16px;
+}
+.inputForm {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+  width: 90%;
+  max-height: 40px;
+}
+.inputForm input {
+  background: transparent;
+  border: none;
+  margin: 10px 20px;
+  font-size: 16px;
+}
+.inputForm input:focus {
+  outline: none;
+}
+.inputForm input::placeholder {
+  color: var(--DesaturatedRed);
+  opacity: 0.5;
+}
+.interactiveButton {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.errorIcon {
+  position: absolute;
+  left: -80%;
+}
+.interactiveButton button {
+  padding: 10px 21px;
+  border: none;
+  border-radius: 100px;
+  background-image: var(--colorGradient2);
+  width: fit-content;
+  height: fit-content;
+  scale: 1.05;
+  cursor: pointer;
+  transition: ease-in 150ms;
+}
+.interactiveButton button img {
+  width: 10px;
+}
+.interactiveButton button:hover {
+  background-image: none;
+  background-color: var(--DesaturatedRed);
+  filter: brightness(1.3);
+  scale: 1.15;
+}
+.inputForm .errorMessage {
+  position: absolute;
+  top: 120%;
+  left: 5%;
+  color: red;
+  font-size: 13px;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(5px);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media only screen and (min-width: 715px) {
+  .component {
+    display: flex;
+  }
+  .mobileImageContainer {
+    display: none;
+  }
+  .contentContainer {
+    flex: 1.5;
+    display: flex;
+    height: 100dvh;
+    overflow: auto;
+    justify-content: center;
+  }
+  .imageContainer {
+    flex: 1;
+    display: flex;
+    background: url(../images/hero-desktop.jpg) top center/ cover no-repeat;
+  }
+  .navbar{
+    padding: 4rem 1rem 1rem 1rem;
+  }
+  .navbar img{
+    width: 8.5em;
+  }
+  .mainContainer {
+    max-width: 480px;
+  }
+  .mainContainer h1 {
+    text-align: left;
+    font-size: 3rem;
+    line-height: 1.3em;
+  }
+  .mainContainer p{
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .navbar{
+    padding: 8rem 1rem 1rem 1rem;
+  }
+  .navbar img{
+    width: 12em;
+  }
+  .mainContainer {
+    max-width: 550px;
+    gap: 3rem;
+  }
+  .mainContainer h1 {
+    text-align: left;
+    font-size: 4.5rem;
+    line-height: 1.3em;
+  }
+  .mainContainer p{
+    font-size: 1.3rem;
+  }
+  .inputForm{
+    max-height: 60px;
+    border-radius: 50px;
+  }
+  .inputForm input {
+    font-size: 20px;
+  }
+  .interactiveButton button{
+    padding: 15px 30px;
+  }
+  .inputForm .errorMessage{
+    font-size: 0.9rem;
+  }
+}
