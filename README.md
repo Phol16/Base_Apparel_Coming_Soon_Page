@@ -18,7 +18,7 @@ Desktop View
 
 - Source Code: https://github.com/Phol16/Base_Apparel_Coming_Soon_Page
 
-- Live Site: 
+- Live Site: https://phol16.github.io/Base_Apparel_Coming_Soon_Page/
 
 ### My process
 
@@ -35,7 +35,7 @@ Desktop View
 
 ### What I learned
 
-I learned that basic fundamentals are very important and to honed more advance tools, you need to master or understand the basics
+I learned that basic fundamentals are very important and to hone more advance tools, you need to master or understand the basics
 
 ### Author
 
