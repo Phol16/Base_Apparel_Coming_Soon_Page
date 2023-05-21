@@ -67,7 +67,7 @@ body {
   display: flex;
   flex-flow: column;
   gap: 2rem;
-  padding: 4rem 1rem;
+  padding: 2rem 1rem;
   color: var(--DesaturatedRed);
 }
 .mainContainer h1 {
@@ -203,9 +203,9 @@ body {
     text-align: left;
   }
 }
-@media only screen and (min-width: 1500px) {
+@media only screen and (min-width: 1440px) {
   .navbar{
-    padding: 8rem 1rem 1rem 1rem;
+    padding: 5rem 1rem 1rem 1rem;
   }
   .navbar img{
     width: 12em;
