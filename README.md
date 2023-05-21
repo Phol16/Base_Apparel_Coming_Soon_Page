@@ -18,7 +18,7 @@ Desktop View
 
 - Source Code: https://github.com/Phol16/Base_Apparel_Coming_Soon_Page
 
-- Live Site: 
+- Live Site: https://phol16.github.io/Base_Apparel_Coming_Soon_Page/
 
 ### My process
 
