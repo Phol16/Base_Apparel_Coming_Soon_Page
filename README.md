@@ -35,7 +35,7 @@ Desktop View
 
 ### What I learned
 
-I learned that basic fundamentals are very important and to honed more advance tools, you need to master or understand the basics
+I learned that basic fundamentals are very important and to hone more advance tools, you need to master or understand the basics
 
 ### Author
 
